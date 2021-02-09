@@ -10,6 +10,11 @@ namespace GuessingGame
     {
         static void Main(string[] args)
         {
+            int score = 0;
+
+            Console.WriteLine("Press any key to start game...");
+            Console.ReadKey();
+
             string secretWord = "giraffe";
             string guess = "";
             int guessCount = 0;
