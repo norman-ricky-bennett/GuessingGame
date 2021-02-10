@@ -11,7 +11,6 @@ namespace GuessingGame
         static void Main(string[] args)
         {
             Application.Run();
-        }  
+        }
     }
 }
-// 

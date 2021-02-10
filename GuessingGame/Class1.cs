@@ -3,18 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace GuessingGame
 {
     class Application
     {
+        public static void FirstWarning(Object source, ElapsedEventArgs e)
+        {
+            Console.WriteLine("\nI forgot to mention you're timed...opps. Better hurry buttercup!");
+        }
+
+        public static void SecondWarning(Object source, ElapsedEventArgs e)
+        {
+            Console.WriteLine("\nTick Tock Tick Tock slow poke...");
+        }
+
+        public static void ThirdWarning(Object source, ElapsedEventArgs e)
+        {
+            Console.WriteLine("\nLAST CHANCE!!");
+        }
+
+        public static void GameOver(Object source, ElapsedEventArgs e)
+        {
+            int loop = 0;
+            while (loop == 0)
+            {
+                Console.WriteLine("You lost the game!!");
+            }
+        }
+
         public static void Run()
         {
+
             string[] secretWord = { "24 miles per hour", "24mph", "24 mph",
                 "twentyfourmilesperhour", "twenty-four miles per hour", "twentyfour miles per hour"};
             bool outOfGuesses = false;
             int guessCount = 0;
-
 
             Console.WriteLine("Press any key to start game...");
             Console.ReadKey();
@@ -42,6 +67,26 @@ namespace GuessingGame
             Console.ReadKey();
             Console.Clear();
 
+            // Starts question timer
+            Timer gameTimer1 = new Timer(1000);
+            gameTimer1.Enabled = true;
+            gameTimer1.Elapsed += FirstWarning;
+            gameTimer1.AutoReset = false;
+
+            Timer gameTimer2 = new Timer(5000);
+            gameTimer2.Enabled = true;
+            gameTimer2.Elapsed += SecondWarning;
+            gameTimer2.AutoReset = false;
+            
+            Timer gameTimer3 = new Timer(12000);
+            gameTimer3.Enabled = true;
+            gameTimer3.Elapsed += ThirdWarning;
+            gameTimer3.AutoReset = false;
+
+            Timer gameTimer4 = new Timer(15000);
+            gameTimer4.Enabled = true;
+            gameTimer4.Elapsed += GameOver;
+            gameTimer4.AutoReset = false;
 
             Console.Write("What is the air speed velocity of an unladen swallow?");
             string guess = Console.ReadLine();
@@ -52,6 +97,7 @@ namespace GuessingGame
                 // adds +1 to guessCount
                 guessCount++;
                 Console.Clear();
+
                 if (guessCount == 1)
                 {
                     Console.WriteLine("Your guess was wrong. Please enter a different guess. (Hint: It's a European swallow.)");
@@ -69,8 +115,10 @@ namespace GuessingGame
             }
             if (outOfGuesses)
             {
-                Console.WriteLine("You lost the game!!");
-                Console.ReadKey();
+                while (guessCount > 0)
+                {
+                    Console.WriteLine("You lost the game!!");
+                }
             }
             else
             {

@@ -5,3 +5,10 @@ C:\Users\Old Ironsides\OneDrive\Desktop\ElevenFifty\GuessingGame\GuessingGame\Gu
 C:\Users\Old Ironsides\OneDrive\Desktop\ElevenFifty\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.csproj.CoreCompileInputs.cache
 C:\Users\Old Ironsides\OneDrive\Desktop\ElevenFifty\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.exe
 C:\Users\Old Ironsides\OneDrive\Desktop\ElevenFifty\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.pdb
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\bin\Debug\GuessingGame.exe.config
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\bin\Debug\GuessingGame.exe
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\bin\Debug\GuessingGame.pdb
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.csprojAssemblyReference.cache
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.csproj.CoreCompileInputs.cache
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.exe
+D:\AAA_DOCUMENTS\ElevenFiftyProjects\GuessingGame\GuessingGame\GuessingGame\obj\Debug\GuessingGame.pdb
