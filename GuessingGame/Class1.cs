@@ -42,24 +42,25 @@ namespace GuessingGame
             Console.ReadKey();
             Console.Clear();
 
+
             Console.Write("What is the air speed velocity of an unladen swallow?");
             string guess = Console.ReadLine();
 
 
             while (!secretWord.Contains(guess) && !outOfGuesses)
             {
-                // adds +1 to guessCount 0
+                // adds +1 to guessCount
                 guessCount++;
                 Console.Clear();
                 if (guessCount == 1)
                 {
-                    Console.WriteLine("Your guess was wrong. Please press enter to try again. (Hint: It's a European swallow.)");
-                    Console.ReadLine();
+                    Console.WriteLine("Your guess was wrong. Please enter a different guess. (Hint: It's a European swallow.)");
+                    guess = Console.ReadLine();
                 }
                 if (guessCount == 2)
                 {
-                    Console.WriteLine("Your guess was wrong. PLease press enter to try again. (Hint: it's in miles per hour)");
-                    Console.ReadKey();
+                    Console.WriteLine("Your guess was wrong. Please enter a different guess. (Hint: it's in miles per hour)");
+                    guess = Console.ReadLine();
                 }
                 if (guessCount == 3)
                 {
