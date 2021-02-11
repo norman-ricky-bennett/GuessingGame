@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Timers;
 
 namespace GuessingGame
-{
+{ //comment
     class Application
     {
         public static void FirstWarning(Object source, ElapsedEventArgs e)
